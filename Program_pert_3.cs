@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FileIlangPuh
+namespace Pertemuan3
 {
     class Program
     {
