@@ -1,5 +1,4 @@
 using System;
-using System.IO;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,21 +10,21 @@ namespace Pertemuan3
     {
         static void Main(string[] args)
         {
-            // WhileTest();
-            // Console.WriteLine();
-            // DoWhileTest();
-            // Console.WriteLine();
-            // ForTest();
-            // Console.WriteLine();
-            // ForEachTest();
-            // Console.WriteLine();
+            WhileTest();
+            Console.WriteLine();
+            
+            DoWhileTest();
+            Console.WriteLine();
+            
+            ForTest();
+            Console.WriteLine();
+            
+            ForEachTest();
+            Console.WriteLine();
 
-            // long result = Factorial(5);
-            // Console.WriteLine(result);
-            // Console.WriteLine();
-
-            // ExceptionTest();
-            // Console.WriteLine();
+            long result = Factorial(5);
+            Console.WriteLine(result);
+            Console.WriteLine();
         }
 
         public static void WhileTest()
@@ -75,25 +74,6 @@ namespace Pertemuan3
             else
             {
                 return n * Factorial(n - 1);
-            }
-        }
-
-        private static void ExceptionTest()
-        {
-            StreamReader sr = null;
-
-            try
-            {
-                sr = File.OpenText(@"c:\data.txt");
-                Console.WriteLine(sr.ReadToEnd());
-            }
-            catch (FileNotFoundException fnfe)
-            {
-                Console.WriteLine(fnfe.Message);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
             }
         }
     }
