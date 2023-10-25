@@ -18,6 +18,8 @@ namespace Pertemuan3
         {
             StreamReader sr = null;
 
+            // Pilih salah satu
+
             // 1
             sr = File.OpenText(@"C:\data.txt");
             Console.WriteLine(sr.ReadToEnd());
