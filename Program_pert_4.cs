@@ -17,9 +17,12 @@ namespace Pertemuan3
         private static void ExceptionTest()
         {
             StreamReader sr = null;
-            // sr = File.OpenText(@"C:\data.txt");
-            // Console.WriteLine(sr.ReadToEnd());
 
+            // 1
+            sr = File.OpenText(@"C:\data.txt");
+            Console.WriteLine(sr.ReadToEnd());
+
+            // 2
             try
             {
                 sr = File.OpenText(@"C:\data.txt");
@@ -32,6 +35,15 @@ namespace Pertemuan3
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
+            }
+
+            // 3
+            finally
+            {
+                if (sr != null)
+                {
+                    sr.Close();
+                }
             }
         }
     }
