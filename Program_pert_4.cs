@@ -17,8 +17,22 @@ namespace Pertemuan3
         private static void ExceptionTest()
         {
             StreamReader sr = null;
-            sr = File.OpenText(@"C:\data.txt");
-            Console.WriteLine(sr.ReadToEnd());
+            // sr = File.OpenText(@"C:\data.txt");
+            // Console.WriteLine(sr.ReadToEnd());
+
+            try
+            {
+                sr = File.OpenText(@"C:\data.txt");
+                Console.WriteLine(sr.ReadToEnd());
+            }
+            catch (FileNotFoundException fnfe)
+            {
+                Console.WriteLine(fnfe.Message);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
     }
 }
