@@ -12,7 +12,7 @@ namespace Pertemuan5
         {
             Console.Write("Input your quantity: ");
             int quantity = Int32.Parse(Console.ReadLine());
-            Console.WriteLine("Harga yang harus dibayarkan: Rp. {0}", 
+            Console.WriteLine("Your discount is: {0}", 
                               CalculateDiscount(quantity));
             
             Console.Write("Masukan harga: Rp. ");
