@@ -38,12 +38,12 @@ namespace Pertemuan5
             return discount;
         }
 
-        private static double DiscountHarga(int harga, int jumlah)
+        private static int DiscountHarga(int harga, int jumlah)
         {
             int totalHarga = harga * jumlah;
             int diskon;
-            double jumlahDiskon;
-            double hargaBayar;
+            int jumlahDiskon;
+            int hargaBayar;
 
             if (jumlah >= 100)
                 diskon = 20;
