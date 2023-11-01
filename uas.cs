@@ -10,30 +10,11 @@ namespace Pertemuan5
     {
         static void Main(string[] args)
         {
-            do
-            {
-                Console.WriteLine("=========================");
-                Console.WriteLine("|        Alfamart       |");
-                Console.WriteLine("=========================");
-                Console.WriteLine("");
-                try
-                {
-                    Console.Write("Masukan harga: Rp. ");
-                    int harga = Int32.Parse(Console.ReadLine());
-                    Console.Write("Masukan jumlah barang: ");
-                    int jumlah = Int32.Parse(Console.ReadLine());
-                    Console.WriteLine("Harga yang harus dibayarkan: Rp.{0}", DiscountHarga(harga, jumlah));
-                }
-                catch
-                {
-                    Console.WriteLine("Tolong masukan angka yang benar.");
-                }
-                Console.WriteLine("");
-                Console.WriteLine("      Terima kasih");
-                Console.WriteLine("");
-                return;
-            }
-            while (true);
+                Console.Write("Masukan harga: Rp. ");
+                int harga = Int32.Parse(Console.ReadLine());
+                Console.Write("Masukan jumlah barang: ");
+                int jumlah = Int32.Parse(Console.ReadLine());
+                Console.WriteLine("Harga yang harus dibayarkan: Rp.{0}", DiscountHarga(harga, jumlah));
         }
 
         public static int DiscountHarga(int harga, int jumlah)
