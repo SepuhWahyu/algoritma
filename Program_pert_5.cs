@@ -10,6 +10,11 @@ namespace Pertemuan5
     {
         static void Main(string[] args)
         {
+            Console.Write("Input your quantity: ");
+            int quantity = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("Harga yang harus dibayarkan: Rp. {0}", 
+                              CalculateDiscount(quantity));
+            
             Console.Write("Masukan harga: Rp. ");
             int harga = Int32.Parse(Console.ReadLine());
             Console.Write("Masukan jumlah barang: ");
@@ -33,7 +38,7 @@ namespace Pertemuan5
             return discount;
         }
 
-        public static double DiscountHarga(int harga, int jumlah)
+        private static double DiscountHarga(int harga, int jumlah)
         {
             int totalHarga = harga * jumlah;
             int diskon;
