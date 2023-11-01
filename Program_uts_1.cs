@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Pertemuan5
+namespace Ulangan_Tengah_semester_1
 {
     class Program
     {
