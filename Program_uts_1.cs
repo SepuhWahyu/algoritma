@@ -24,14 +24,18 @@ namespace Ulangan_Tengah_semester_1
             int jumlahDiskon;
             int hargaBayar;
 
-            if (jumlah >= 100)
-                diskon = 20;
-            else if (jumlah >= 50)
-                diskon = 15;
-            else if (jumlah >= 10)
+            if (jumlah < 20)
+                diskon = 2;
+            else if (jumlah < 40)
+                diskon = 4;
+            else if (jumlah < 60)
+                diskon = 6;
+            else if (jumlah < 80)
+                diskon = 8;
+            else if (jumlah < 100)
                 diskon = 10;
             else
-                diskon = 5;
+                diskon = 20;
 
             jumlahDiskon = totalHarga * diskon / 100;
             hargaBayar = totalHarga - jumlahDiskon;
